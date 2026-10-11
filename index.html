@@ -1,98 +1,175 @@
+<!-- NIVEL DIGITAL | Página principal: index.html -->
+<!-- Los textos se editan aquí; la apariencia está en styles.css y las interacciones en script.js. -->
 <!doctype html>
+
 <html lang="es">
+
+  <!-- CABECERA DEL DOCUMENTO: idioma, SEO, enlaces y configuración del navegador -->
   <head>
+
     <meta charset="UTF-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Nivel Digital crea páginas web, automatizaciones y mejoras de procesos para pymes en Costa Rica." />
+
+    <!-- SEO: descripción que Google puede usar para resumir la página en los resultados. -->
+    <meta name="description" content="Páginas web para pymes, automatización de procesos y reportes con Power Query. Atención cercana desde Heredia para negocios en Costa Rica." />
+
     <meta name="theme-color" content="#0a2540" />
-    <title>Nivel Digital | Web y automatización para pymes</title>
+
+    <!-- SEO: título que identifica la página en Google y en la pestaña del navegador. -->
+    <title>Páginas web y automatización para pymes | Nivel Digital</title>
+
+    <!-- URL principal de esta página. Mantén aquí la versión preferida del dominio. -->
+    <link rel="canonical" href="https://niveldigitalcr.com/" />
+
+    <!-- Datos para mostrar el título y la descripción al compartir el enlace en redes sociales. -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_CR" />
+    <meta property="og:site_name" content="Nivel Digital" />
+    <meta property="og:title" content="Páginas web y automatización para pymes | Nivel Digital" />
+    <meta property="og:description" content="Páginas web, automatización de procesos y reportes con Power Query para pymes en Costa Rica." />
+    <meta property="og:url" content="https://niveldigitalcr.com/" />
+
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+    <!-- Conecta este HTML con el archivo que controla colores, tamaños y diseño. -->
     <link rel="stylesheet" href="styles.css" />
+
   </head>
+
   <body>
+
     <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
+    <!-- 1. ENCABEZADO Y MENÚ: los enlaces saltan a secciones con el mismo id. -->
     <header class="site-header" id="inicio">
+
       <div class="container nav-wrap">
+
+        <!-- Logo y nombre de la marca. -->
         <a class="brand" href="#inicio" aria-label="Nivel Digital, inicio">
+
           <svg class="brand-mark" viewBox="0 0 64 52" aria-hidden="true">
             <rect x="3" y="29" width="15" height="20" rx="3" />
             <path d="M23 17h15v32H23V17Zm0 0 15 14v12L23 29V17Z" />
             <rect x="43" y="3" width="18" height="46" rx="3" />
           </svg>
+
           <span>Nivel <strong>Digital</strong></span>
+
         </a>
 
+        <!-- Botón del menú para celulares; su comportamiento está en script.js. -->
         <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
           <span></span><span></span><span></span>
           <span class="sr-only">Abrir menú</span>
         </button>
 
+        <!-- Cambia los nombres o destinos del menú aquí. Los destinos usan #id. -->
         <nav id="main-nav" class="main-nav" aria-label="Navegación principal">
           <a href="#servicios">Servicios</a>
           <a href="#metodologia">Cómo trabajamos</a>
           <a href="#portafolio">Portafolio</a>
           <a class="nav-cta" href="#contacto">Hablemos</a>
         </nav>
+
       </div>
+
     </header>
 
+    <!-- 2. CONTENIDO PRINCIPAL DE LA PÁGINA -->
     <main id="contenido">
+
+      <!-- 2.1 INICIO: cambia el título principal, la presentación y los botones. Mantén un solo h1. -->
       <section class="hero">
+
         <div class="hero-grid container">
+
           <div class="hero-copy reveal">
-            <p class="eyebrow"><span></span> Soluciones digitales para pymes</p>
-            <h1>Tu negocio puede trabajar <em>mejor.</em></h1>
-            <p class="hero-lead">Creamos páginas web y automatizaciones que reducen tareas manuales, organizan tus procesos y te devuelven tiempo para crecer.</p>
+
+            <p class="eyebrow"><span></span> Servicios digitales para pymes en Costa Rica</p>
+
+            <h1>Páginas web y automatización para pymes en Costa Rica</h1>
+
+            <p class="hero-lead">
+              Creamos páginas web, automatizamos tareas con Power Automate y organizamos información con reportes en Excel y Power Query. Ayudamos a tu pyme a trabajar con más claridad y menos tareas manuales.
+            </p>
+
             <div class="hero-actions">
-              <a class="button button-primary" href="#contacto">Cuéntanos tu necesidad <span aria-hidden="true">→</span></a>
+              <a class="button button-primary" href="#contacto">
+                Cuéntanos tu necesidad <span aria-hidden="true">→</span>
+              </a>
               <a class="button button-secondary" href="#servicios">Ver servicios</a>
             </div>
+
             <div class="trust-row" aria-label="Características del servicio">
               <span>✓ Atención cercana</span>
               <span>✓ Soluciones a tu medida</span>
               <span>✓ Resultados medibles</span>
             </div>
+
           </div>
 
+          <!-- Gráfica decorativa de la portada. Su diseño se cambia en styles.css. -->
           <div class="hero-visual reveal" aria-label="Representación del progreso de un negocio">
+
             <div class="orbit orbit-one"></div>
             <div class="orbit orbit-two"></div>
+
             <div class="progress-card">
+
               <div class="card-topline">
                 <span>Proceso optimizado</span>
                 <span class="status"><i></i> Activo</span>
               </div>
+
               <div class="steps-graphic" aria-hidden="true">
                 <div class="step step-one"><span>Manual</span></div>
                 <div class="step step-two"><span>Organizado</span></div>
                 <div class="step step-three"><span>Automatizado</span></div>
               </div>
+
               <div class="impact-row">
-                <div><strong>−65%</strong><span>tiempo operativo</span></div>
+                <div><strong>Más tiempo</strong><span>para tu negocio</span></div>
                 <div><strong>+ claridad</strong><span>en cada etapa</span></div>
               </div>
+
             </div>
+
           </div>
+
         </div>
+
       </section>
 
+      <!-- 2.2 SERVICIOS: edita los nombres y descripciones de las tarjetas. -->
       <section class="services section" id="servicios">
+
         <div class="container">
+
           <div class="section-heading reveal">
+
             <div>
               <p class="eyebrow"><span></span> Lo que hacemos</p>
-              <h2>Soluciones que hacen avanzar tu negocio</h2>
+              <h2>Páginas web, automatización y mejora de procesos</h2>
             </div>
-            <p>No necesitas más herramientas: necesitas que las herramientas correctas trabajen juntas.</p>
+
+            <p>
+              Ayudamos a pymes de Costa Rica a presentar mejor sus servicios en internet, automatizar tareas y tomar decisiones con información organizada.
+            </p>
+
           </div>
 
           <div class="service-grid">
+
+            <!-- Servicio 1: páginas web -->
             <article class="service-card reveal">
               <div class="service-number">01</div>
               <div class="service-icon" aria-hidden="true">⌁</div>
-              <h3>Páginas web</h3>
-              <p>Sitios profesionales, rápidos y adaptados al celular que presentan tu negocio con claridad y facilitan el contacto.</p>
+              <h3>Páginas web para pymes</h3>
+              <p>
+                Diseñamos sitios web profesionales y adaptados a celulares para presentar tus servicios, responder preguntas frecuentes y facilitar que clientes potenciales te contacten.
+              </p>
               <ul>
                 <li>Páginas informativas y catálogos</li>
                 <li>Diseño responsive</li>
@@ -100,11 +177,14 @@
               </ul>
             </article>
 
+            <!-- Servicio 2: automatización -->
             <article class="service-card featured reveal">
               <div class="service-number">02</div>
               <div class="service-icon" aria-hidden="true">↯</div>
-              <h3>Automatización</h3>
-              <p>Flujos digitales que reducen tareas repetitivas, errores y seguimiento manual dentro de tu operación.</p>
+              <h3>Automatización de procesos</h3>
+              <p>
+                Configuramos automatizaciones con Power Automate para organizar solicitudes, enviar notificaciones y gestionar aprobaciones, reduciendo el seguimiento manual.
+              </p>
               <ul>
                 <li>Power Automate</li>
                 <li>Notificaciones y aprobaciones</li>
@@ -112,46 +192,67 @@
               </ul>
             </article>
 
+            <!-- Servicio 3: procesos y reportes -->
             <article class="service-card reveal">
               <div class="service-number">03</div>
               <div class="service-icon" aria-hidden="true">⌗</div>
-              <h3>Mejora de procesos</h3>
-              <p>Analizamos cómo trabajas hoy para encontrar pasos innecesarios y crear una forma más simple de operar.</p>
+              <h3>Mejora de procesos y reportes</h3>
+              <p>
+                Analizamos cómo trabaja tu negocio, ordenamos la información y preparamos reportes en Excel y Power Query para que puedas dar seguimiento a tus resultados.
+              </p>
               <ul>
                 <li>Análisis del proceso actual</li>
-                <li>Reportes con Power Query</li>
+                <li>Reportes en Excel y Power Query</li>
                 <li>Documentación y medición</li>
               </ul>
             </article>
+
           </div>
+
         </div>
+
       </section>
 
+      <!-- 2.3 NECESIDADES DEL CLIENTE: ejemplos de problemas que Nivel Digital ayuda a resolver. -->
       <section class="fit-section section">
+
         <div class="container fit-grid">
+
           <div class="fit-copy reveal">
             <p class="eyebrow light"><span></span> ¿Te identificas?</p>
             <h2>Hay una mejor manera de hacer las cosas.</h2>
-            <p>Muchas pymes crecen sosteniendo procesos que ya no les funcionan. Nosotros te ayudamos a ordenarlos y digitalizarlos sin complicar tu operación.</p>
-            <a class="text-link" href="#contacto">Revisemos tu proceso <span aria-hidden="true">→</span></a>
+            <p>
+              Muchas pymes crecen sosteniendo procesos que ya no les funcionan. Te ayudamos a revisarlos, documentarlos y digitalizarlos de forma práctica, sin complicar tu operación.
+            </p>
+            <a class="text-link" href="#contacto">
+              Revisemos tu proceso <span aria-hidden="true">→</span>
+            </a>
           </div>
+
           <div class="pain-list reveal">
             <div><span>01</span><p>Repites las mismas tareas todos los días.</p></div>
             <div><span>02</span><p>La información vive en correos, chats y archivos separados.</p></div>
             <div><span>03</span><p>Dependes de seguimiento manual para que el trabajo avance.</p></div>
             <div><span>04</span><p>Tu presencia digital ya no refleja el nivel de tu negocio.</p></div>
           </div>
+
         </div>
+
       </section>
 
+      <!-- 2.4 METODOLOGÍA: actualiza los pasos si cambia la forma de trabajo. -->
       <section class="method section" id="metodologia">
+
         <div class="container">
+
           <div class="section-heading reveal">
             <div>
               <p class="eyebrow"><span></span> Nuestra metodología</p>
               <h2>De la necesidad al resultado</h2>
             </div>
-            <p>Trabajamos con un proceso claro para que sepas qué estamos haciendo, por qué y qué resultado esperamos.</p>
+            <p>
+              Trabajamos con un proceso claro para que sepas qué estamos haciendo, por qué y qué resultado esperamos.
+            </p>
           </div>
 
           <ol class="method-track">
@@ -161,17 +262,29 @@
             <li class="reveal"><span>04</span><strong>Validación</strong><p>Probamos contigo y corregimos antes de entregar.</p></li>
             <li class="reveal"><span>05</span><strong>Resultados</strong><p>Documentamos, entregamos y medimos la mejora.</p></li>
           </ol>
+
         </div>
+
       </section>
 
+      <!-- 2.5 PORTAFOLIO: caso demostrativo. Revisa que cualquier cifra siga siendo correcta antes de publicarla. -->
       <section class="case-study section" id="portafolio">
+
         <div class="container case-grid">
+
           <div class="case-copy reveal">
             <p class="eyebrow"><span></span> Caso demostrativo</p>
             <h2>Recepción y distribución automática de facturas</h2>
-            <p>Un proceso manual de revisión, identificación y asignación se transforma en un flujo estructurado con registro y seguimiento.</p>
-            <div class="case-tags"><span>Power Automate</span><span>Excel</span><span>Mejora de procesos</span></div>
+            <p>
+              Un proceso manual de revisión, identificación y asignación se transforma en un flujo estructurado con registro y seguimiento.
+            </p>
+            <div class="case-tags">
+              <span>Power Automate</span>
+              <span>Excel</span>
+              <span>Mejora de procesos</span>
+            </div>
           </div>
+
           <div class="results-panel reveal">
             <p>Impacto estimado</p>
             <div class="result-main"><span>De 2.5–3 h</span><i>→</i><strong>&lt; 1 h</strong></div>
@@ -181,23 +294,39 @@
               <div><strong>Menos</strong><span>errores de asignación</span></div>
             </div>
           </div>
+
         </div>
+
       </section>
 
+      <!-- 2.6 CONTACTO: cambia el texto o el correo del enlace mailto si actualizas los datos. -->
       <section class="contact section" id="contacto">
+
         <div class="container contact-box reveal">
+
           <div>
             <p class="eyebrow light"><span></span> Empecemos</p>
             <h2>¿Qué tarea te gustaría dejar de hacer manualmente?</h2>
-            <p>Cuéntanos qué está consumiendo tiempo en tu negocio. La primera conversación es para entender tu necesidad y saber si podemos ayudarte.</p>
+            <p>
+              Cuéntanos qué está consumiendo tiempo en tu negocio. Atendemos pymes desde Heredia y otras zonas de Costa Rica; la primera conversación es para entender tu necesidad y saber si podemos ayudarte.
+            </p>
           </div>
-          <a class="button button-white" href="mailto:contacto@niveldigitalcr.com?subject=Consulta%20desde%20Nivel%20Digital">Escribir a Nivel Digital <span aria-hidden="true">→</span></a>
+
+          <a class="button button-white" href="mailto:contacto@niveldigitalcr.com?subject=Consulta%20desde%20Nivel%20Digital">
+            Escribir a Nivel Digital <span aria-hidden="true">→</span>
+          </a>
+
         </div>
+
       </section>
+
     </main>
 
+    <!-- 3. PIE DE PÁGINA: marca, ubicación y año actual. -->
     <footer class="site-footer">
+
       <div class="container footer-grid">
+
         <a class="brand footer-brand" href="index.html" aria-label="Nivel Digital, volver al inicio">
           <svg class="brand-mark" viewBox="0 0 64 52" aria-hidden="true">
             <rect x="3" y="29" width="15" height="20" rx="3" />
@@ -206,11 +335,17 @@
           </svg>
           <span>Nivel <strong>Digital</strong></span>
         </a>
-        <p>Páginas web, automatización y mejora de procesos para pymes.</p>
-        <p>Costa Rica· <span id="year"></span></p>
+
+        <p>Páginas web para pymes, automatización de procesos y reportes con Power Query.</p>
+        <p>Heredia, Costa Rica · <span id="year"></span></p>
+
       </div>
+
     </footer>
 
+    <!-- Carga el JavaScript del menú, las animaciones y el año actual. -->
     <script src="script.js"></script>
+
   </body>
+
 </html>
